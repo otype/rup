@@ -1,0 +1,57 @@
+= RUP - Repository Updater
+
+Manage multiple SCM repositories at different locations of various types like SVN, GIT, REPO with one simple CLI tool.
+
+RUP is available via Gemcutter!
+
+== Requirements
+
+RUP works with Subversion, GIT and Repo. It requires all these tools to be available via your PATH variable.
+
+== Installation
+
+=== Via Rubyforge:
+
+$ gem install rup
+
+=== Via Gemcutter:
+
+$ gem install gemcutter
+$ gem tumble
+$ gem install rup 
+
+== Usage
+
+Adding a repository location to rup configuration:
+
+$ rup -a REPO_DIR/
+
+Import a given parent directory with multiple, existing repositories:
+
+$ rup -i PARENT_DIR/
+
+List all repositories under rup control:
+
+$ rup -l
+
+Update all repositories in rup:
+
+$ rup -u
+
+See
+
+$ rup -h
+
+for more options.
+
+== Problems?
+
+Problems? Then try following:
+
+1. File a suport request in RUP's Rubyforge Tracker
+
+2. Drop me a mail at rup@otype.de
+
+== Copyright
+
+Copyright (c) 2009 Otype.de. See LICENSE for details.
